@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="667dp"
+        android:orientation="vertical">
+
+
+        <!--<TextView
+            android:id="@+id/welcomeUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User Email"
+            android:textAlignment="center"
+            android:textSize="8pt"
+            android:textStyle="bold" />-->
+
+
+        <!--<TextView
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textAlignment="center"
+            android:textSize="8pt"
+            android:textStyle="bold" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/logOut"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="30dp"-->
+<!--            android:layout_marginTop="300dp"-->
+<!--            android:layout_marginBottom="200dp"-->
+<!--            android:background="@drawable/gradient"-->
+<!--            android:text="log out"-->
+<!--            android:textSize="11pt"-->
+<!--            android:textStyle="bold" />-->
+
+        <TextView
+            android:id="@+id/nid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NID"
+            android:textAlignment="center"
+            android:textSize="8pt"
+            android:textStyle="bold" />
+        />
+        //Comment the logout button
+
+
+    </FrameLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2dp"
+        app:menu="@menu/bottom_nav"
+        />
+
+
+</RelativeLayout>
